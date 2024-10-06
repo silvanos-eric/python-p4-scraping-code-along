@@ -7,9 +7,9 @@ class Course:
 
     def __str__(self):
         output = ''
-        output += f'Title: {self.title}\nSchedule: {self.schedule}\nDescription: {self.description}\n'
-        output += '------------------'
+        output += f'Title: {self.title}\nSchedule: {self.schedule}\nDescription: {self.description}'
+        output += '\n------------------'
         return output
 
     def __repr__(self):
-        return f'Course({self.tilte}, {self.schedule}, {self.description})'
+        return f'Course("{self.title}", "{self.schedule}", "{self.description}")'
